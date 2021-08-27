@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/punk.png" type="image/x-icon" />
+    <title>URL Shortner API !</title>
+    <link rel="stylesheet" href="./Scss/style.scss" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="formbackground">
+        <input
+          class="input"
+          type="text"
+          name=""
+          id="link"
+          placeholder="Paste the 🔗 here... "
+        />
+        <button id="shortenIt">Shorten It!</button>
+      </div>
+      <div class="love">
+        <p>
+          Made with 💖 by
+          <a href="http://github.com/NigamDevansh">Devansh</a> :)
+        </p>
+      </div>
+      <!-- This where we append the section template -->
+      <ul id="linkAppend"></ul>
+      <!-- this is te section template  -->
+      <template id="linkAppendTemplate">
+        <section>
+          <div class="link">
+            <h1 id="link_copy"></h1>
+          </div>
+          <div class="linkshortandbutton">
+            <h1 class="shortened" id="shortened"></h1>
+            <button class="copy">Copy</button>
+          </div>
+        </section>
+      </template>
+    </div>
+  </body>
+</html>

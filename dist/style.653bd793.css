@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 475px) {
+  * {
+    font-size: 45.7%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type=text],
+input:focus,
+input:hover,
+input:active {
+  outline: unset;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button {
+  outline: unset;
+  color: white;
+  border: none;
+}
+
+h1 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 475px) {
+  .content {
+    max-width: 95%;
+  }
+}
+
+.formbackground {
+  margin: 4rem 0 3rem 0;
+  padding: 5rem 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 1.3rem 2.7rem -0.5rem, rgba(0, 0, 0, 0.3) 0px 0.8rem 1.6rem -0.8rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/bg-shorten-desktop.b98b5bc1.svg);
+  background-size: 100% 100%;
+  border-radius: 2rem;
+  background-color: #3b3054;
+}
+@media only screen and (max-width: 475px) {
+  .formbackground {
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    flex-direction: column;
+  }
+}
+.formbackground .input {
+  font-size: 2rem;
+  width: 80%;
+  padding: 1rem 3rem;
+}
+@media only screen and (max-width: 475px) {
+  .formbackground .input {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+.formbackground button {
+  font-size: 1.75rem;
+  width: 15%;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.808);
+  box-shadow: 0px 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.formbackground button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 1.5rem 2rem rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-0.7rem);
+}
+@media only screen and (max-width: 475px) {
+  .formbackground button {
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  .formbackground button:hover {
+    transform: translateY(-0.4rem);
+  }
+}
+
+.love {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.love a {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 475px) {
+  .love {
+    font-size: 1.5rem;
+  }
+  .love a {
+    font-size: 1rem;
+  }
+}
+
+section {
+  border-radius: 1rem;
+  padding: 2.5rem 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 1rem 1.5rem -0.5rem inset, rgba(0, 0, 0, 0.3) 0px 1rem 1.5rem -0.8rem inset;
+  justify-content: space-between;
+  display: flex;
+  background-color: whitesmoke;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 475px) {
+  section {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0.5rem 1rem -0.25rem inset, rgba(0, 0, 0, 0.3) 0px 0.5rem 1rem -0.4rem inset;
+    padding: 1.5rem 2rem;
+  }
+}
+
+.link {
+  align-self: center;
+}
+
+.linkshortandbutton {
+  display: flex;
+  align-items: center;
+}
+.linkshortandbutton h1 {
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 475px) {
+  .linkshortandbutton h1 {
+    margin-right: 1rem;
+  }
+}
+.linkshortandbutton button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.linkshortandbutton button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 1.5rem 2rem rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-0.7rem);
+}
+@media only screen and (max-width: 475px) {
+  .linkshortandbutton button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .linkshortandbutton button:hover {
+    transform: translateY(-0.4rem);
+  }
+}
+
+.shortened {
+  color: #2acfcf;
+}
+@media only screen and (max-width: 475px) {
+  .shortened {
+    font-size: 1.5rem;
+  }
+}
+
+.active {
+  box-shadow: 1px 1px 1px 1px rgba(255, 77, 77, 0.836);
+}
+
+/*# sourceMappingURL=/style.653bd793.css.map */
